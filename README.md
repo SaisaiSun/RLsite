@@ -8,4 +8,4 @@ conda env create -f environment.yml
 
 # Making your prediction using the pre-trained model 
 
-$ python prediction.py
+$ python predict.py

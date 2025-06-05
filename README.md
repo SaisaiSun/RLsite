@@ -10,6 +10,7 @@ conda env create -f environment.yml
 # Making your prediction using the pre-trained model 
 
 $ unzip data/training&test_data.zip
+
 $ python run.py
 
 # Citation

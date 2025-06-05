@@ -39,7 +39,7 @@ if __name__ == "__main__":
     #print(classifier_model)
     classifier_model.to(device)
 
-    test_dataset = graphloader.SupervisedDataset(data_path="data/mydata", hashing_path="data/2.5DGraph/iguana/all_graphs_annot_hash.p",node_features=node_features,node_target=node_target,all_graphs=test_list)
+    test_dataset = graphloader.SupervisedDataset(data_path="data/training&test_data/", hashing_path="data/2.5DGraph/iguana/all_graphs_annot_hash.p",node_features=node_features,node_target=node_target,all_graphs=test_list)
     #test_dataset.setNorm([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10, 0.34146341463414637])
     test_loader = graphloader.GraphLoader(dataset=test_dataset, split=False, batch_size=1).get_data()
 
